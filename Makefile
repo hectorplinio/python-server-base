@@ -2,9 +2,13 @@
 
 # Linting targets
 lint:
-	flake8 src/
+	flake8 src/ tests/
 
 # Formatting targets
 format:
-	black src/
-	isort src/
+	black src/ tests/
+	isort src/ tests/
+
+# Testing
+test:
+	pytest tests/
